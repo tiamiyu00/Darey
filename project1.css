@@ -1,26 +1,25 @@
+/*BODY*************/
+
 body {
   margin: 0;
   padding: 0;
 }
-.mar{
-  margin-left: 2rem;
+/*DESKTOP NAV*************/
+
+.navbar {
+  display: none;
 }
+
+/*NAVBAR MOBILEVIEW*************/
+
 .dropdown{ 
- 
   display: flex;
   padding: 0px 0px;
   height: 73px;
   border-bottom: solid #040504;
   border-left: none;
   border-right: none;
-  
-
 }
-
-.navbar {
-  display: none;
-}
-
 .name{
   color: #f87171;
   font-family: ui-sans-serif, system-ui, 
@@ -34,6 +33,12 @@ body {
    margin-left: 1.4rem;
    padding: 19px  19px 0px 0px;
 }
+/*DROPDOWN DIV*************/
+.dropd{
+  position: relative;
+  display: inline-block;
+  }
+  /*DROPDOWN ICON-BUTTON*************/
 .drop{
   width:1.6rem;
   height: 1.6rem;
@@ -41,28 +46,15 @@ body {
   margin-left:14.5rem ;
   margin-top: 1.7rem;
   border-left: none;
-  cursor: pointer;
-  
+  cursor: pointer; 
 }
 
-
-
-
-
-
-
-
-
-.dropd{
-position: relative;
-display: inline-block;
-}
+/*DROPDOWN CONTENT*************/
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -79,9 +71,9 @@ display: inline-block;
    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
    "Segoe UI Symbol", "Noto Color Emoji";;
 }
-.dropdown-content button{
+/* .dropdown-content button{
   margin: 2rem 3rem;
-}
+} */
 .dropdown-content a:hover {background-color: #f1f1f1}
 .dropd:hover .dropdown-content {
   display: block;
@@ -91,11 +83,11 @@ display: inline-block;
 
 
 
-
+/* CONTENT DIV*************/
 .content{
   margin: 0 1.3rem;
-  
 }
+/* BLOCK 1 *************/
 .h1{
   font-size: large;
   font-family: system-ui, -apple-system, 
@@ -116,6 +108,7 @@ display: inline-block;
    word-spacing: 5px;
 
 }
+
 .p{
   font-family: system-ui, -apple-system, 
   BlinkMacSystemFont, "Segoe UI", Roboto, 
@@ -129,16 +122,26 @@ display: inline-block;
    line-height: 30px;
    margin-bottom: 1.7rem;
    width: 21rem;
-   
-   
 }
+/* BLOCK1 LINKS*************/
 .socio{
   display: flex;
   margin: 0.4rem 0;
   align-items: center;
 
 }
- button{
+.lini{
+  display: flex;
+  margin-left: 5px;
+  margin-bottom: 3rem;
+}
+#gram{
+  width: 3rem;
+  margin-top: 1rem; 
+}
+
+/* BLOCK1 BUTTON*************/
+button{
   padding: 1.8rem;
   padding-top: 1rem;
   display: block;
@@ -152,29 +155,23 @@ border:none;
 font-size: medium;
 border-width:0 ;
 align-items: center;
+}
 
-}
-.lini{
-  display: flex;
-  margin-left: 5px;
-  margin-bottom: 3rem;
-}
-#gram{
-  width: 3rem;
-  margin-top: 1rem;
-  
-}
+/* BLOCK1 IMAGE*************/
 .im{
   margin-top: 2rema;
   width: 100%;
   height:18em;
 }
+
+/* BLOCK 2*************/
+/* FOR EVERY COLORED  TEXTS*************/
 span{
- 
   color: #f87171;
 }
-.about-me{
 
+/* BLOCK2 ABOUT ME*************/
+.about-me{
  font-family:  ui-sans-serif, system-ui, -apple-system, 
   BlinkMacSystemFont, "Segoe UI", Roboto, 
   "Helvetica Neue", Arial, "Noto Sans",
@@ -182,6 +179,13 @@ span{
    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
    word-spacing: 2px;
 }
+
+/*FROM  BLOCK2 DOWNWARD LEFT MARGIN DIV *************/
+.mar{
+  margin-left: 2rem;
+}
+
+/* BLOCK2 IMAGE *************/
 .imh{
   margin-top: 20px;
   width:21rem;
@@ -189,6 +193,7 @@ span{
 }
 
 
+/* BLOCK3 *************/
 .block-3t{
   height: 10rem;
 border-bottom: solid #d1d2d3;
@@ -212,10 +217,12 @@ font-weight: 600;
 .views p{
   margin-right: 0.7rem;
 }
+/* BLOCK3 ARROW IMG *************/
 .views img{
   margin-top: 1.2rem;
   width: 1rem;
 }
+/* BLOCK3 LINKS *************/
 .pro{
   margin:0.5rem;
 }
@@ -255,6 +262,8 @@ margin:0 0;
    margin:0 ;
    margin-bottom: 2rem;
   }
+
+  /* BLOCK4  *************/
   .block-4t{
   height: 4rem;
 border-bottom: solid #d1d2d3;
@@ -280,17 +289,29 @@ margin: 1rem 0 3rem 0;
       word-spacing: 2px;
       padding-right:3rem ;
    }
+
+   /* BLOCK4 1STIMAGE *************/
    .imm{
     width: 100%;
     height: 25rem;
     margin-right: 1rem;
    }
+
+ /* BLOCK4 2ND,3RD,4TH,5TH IMAGE *************/
    .img{
     width:100% ;
    }
+    /* BLOCK4 IMAGE *************/
    .dad img{
     margin-bottom:1rem;
    }
+  
+
+    /* BLOCK5 DESKTOP LINKS *************/
+   .link{
+   display: none;
+   }
+ /* BLOCK5 MOBILE LINKS *************/
    .lik{
     margin: 0.7rem 0;
     font-family:  ui-sans-serif, system-ui, -apple-system, 
@@ -302,9 +323,7 @@ margin: 1rem 0 3rem 0;
      font-weight: 400;
      font-size: larger;
    }
-   .link{
-   display: none;
-   }
+    /* FOOTER *************/
   footer{
     background-color: #f87171;
     margin: 0.7rem 0;
@@ -331,21 +350,24 @@ width: 100%;
   line-height: 30px;
 }
 
-
+ /*  DESKTOP MIN-WIDTH 728PX *************/
  /*DEAKTOP VIEW******/
 @media (min-width: 768px) {
-
+ /* BODY *************/
   body{
     margin: 0 4.7rem;
 display: grid;
   }
+
+   /* MOBILE NAV *************/
   .dropdown{
     display: none;
   }
+
+   /* NAVWITH NAME AND LINKS *************/
   .navbar {
-    
+
     display: flex;
- 
   }
   .name{
    margin:0 2rem 1.3rem 1.3rem;
@@ -357,7 +379,6 @@ display: grid;
   
     display: flex;
    margin-left: 32rem;
-   
    }
    .btn  a{
     text-decoration: none;
@@ -383,11 +404,13 @@ margin-top: 2rem;
  }
  
  /*CONTENT******/
+  /* BLOCK 1*************/
 .block-1t p{
   width: 30.2rem;
   margin-right: 10rem;
-
 }
+
+ /* BLOCK1 IMG *************/
 .im{
   margin-top: 1.5rem;
   margin-left: 0rem;
@@ -401,31 +424,35 @@ margin-top: 2rem;
 }
 .block-1t  .p{
   max-width: 20rem;
-  margin-top: 0.5rem;
- 
+  margin-top: 0.5rem; 
 }
+
 .socio{
  margin-top: 2rem;   
+}
+
+ /* BLOCK2 *************/
+
+ .block-2{
+  margin-top: 1rem;
+  display: flex;
 }
 .about-me{
   max-width:35rem ;
 }
-.block-2{
-  margin-top: 1rem;
-  display: flex;
- 
-}
+
 .imh{
   margin-left: 5rem;
 }
- /*SeCONDBLOCK******/
+ /*BLOCK2******/
  .block-2t .h1{
   width: 30rem;
  }
+ 
 .imo{
   margin-left:7rem ;
 }
- /*THIRDBLOCK******/
+ /*BLOCK3******/
  .block-3t{
   height: 7.3rem;
  }
@@ -439,13 +466,14 @@ margin-top: 2rem;
  }
  .block-3t img{
  width: 0.9rem;
-
  margin: 1.2rem;
-
  }
+
+  /*BLOCK4********/
  .block-4 h2{
   margin: 1.7rem;
  }
+  /*BLOCK4 CARD DIV******/
  .block-4cont{
   padding-top: 3rem;
   padding-left: 2rem;
@@ -484,6 +512,8 @@ margin-right: 12rem;
   width:45%;
   display: flex;
  }
+
+  /*BLOCK5******/
  .block-5{
   margin: 3rem;
  }
@@ -518,10 +548,17 @@ display: flex;
 .link .lik  p{
   margin-top:1rem;
 }
+
+ /*LINKS FOR MOBILE******/
+ .lina{
+  display: none;
+}
+ /*FOOTER MOBILE******/
 .foots{
   display: none;
 }
 
+ /*FOOTER DESKTOP******/
 .foot{ 
   margin-left: 12rem;
   font-family: ui-sans-serif, system-ui, 
@@ -532,8 +569,7 @@ display: flex;
   font-size: 18px;
   line-height: 30px;
 }
-.lina{
-  display: none;
-}
+
+
 
   }
